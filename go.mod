@@ -1,4 +1,4 @@
-module github.com/micromdm/scep
+module github.com/robaato/scep
 
 require (
 	github.com/boltdb/bolt v1.3.1
