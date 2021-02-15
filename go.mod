@@ -1,6 +1,4 @@
-module github.com/robbato/scep
-
-go 1.15
+module github.com/robaato/scep
 
 require (
 	github.com/boltdb/bolt v1.3.1
