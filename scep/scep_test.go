@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/micromdm/scep/scep"
+	"github.com/robaato/scep/scep"
 )
 
 func testParsePKIMessage(t *testing.T, data []byte) *scep.PKIMessage {

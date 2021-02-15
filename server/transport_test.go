@@ -18,9 +18,9 @@ import (
 
 	kitlog "github.com/go-kit/kit/log"
 
-	"github.com/micromdm/scep/depot"
-	filedepot "github.com/micromdm/scep/depot/file"
-	scepserver "github.com/micromdm/scep/server"
+	"github.com/robaato/scep/depot"
+	filedepot "github.com/robaato/scep/depot/file"
+	scepserver "github.com/robaato/scep/server"
 )
 
 func TestCACaps(t *testing.T) {
@@ -93,7 +93,7 @@ func TestPKIOperationGET(t *testing.T) {
 	defer teardown()
 	pkcsreq := loadTestFile(t, "../scep/testdata/PKCSReq.der")
 	message := base64.StdEncoding.EncodeToString(pkcsreq)
-	req, err := http.NewRequest("GET", server.URL + "/scep", nil)
+	req, err := http.NewRequest("GET", server.URL+"/scep", nil)
 	if err != nil {
 		t.Fatal(err)
 	}

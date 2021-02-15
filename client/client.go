@@ -3,8 +3,7 @@ package scepclient
 import (
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
-
-	"github.com/micromdm/scep/server"
+	"github.com/robaato/scep/scepserver"
 )
 
 // Client is a SCEP Client

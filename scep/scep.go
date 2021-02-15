@@ -19,7 +19,7 @@ import (
 	"github.com/pkg/errors"
 	"go.mozilla.org/pkcs7"
 
-	"github.com/micromdm/scep/crypto/x509util"
+	"github.com/robaato/scep/crypto/x509util"
 )
 
 // errors
@@ -215,9 +215,9 @@ func ParsePKIMessage(data []byte, opts ...Option) (*PKIMessage, error) {
 		return nil, err
 	}
 	/*
-	if err := p7.Verify(); err != nil {
-		return nil, err
-	}
+		if err := p7.Verify(); err != nil {
+			return nil, err
+		}
 	*/
 	var tID TransactionID
 	if err := p7.UnmarshalSignedAttribute(oidSCEPtransactionID, &tID); err != nil {

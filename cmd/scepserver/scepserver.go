@@ -23,11 +23,9 @@ import (
 
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
-	"github.com/micromdm/scep/csrverifier"
-	"github.com/micromdm/scep/csrverifier/executable"
-	"github.com/micromdm/scep/depot"
-	"github.com/micromdm/scep/depot/file"
-	"github.com/micromdm/scep/server"
+	"github.com/robaato/scep/csrverifier"
+	"github.com/robaato/scep/depot"
+	"github.com/robaato/scep/depot/file"
 )
 
 // version info
@@ -255,7 +253,7 @@ func createCertificateAuthority(key *rsa.PrivateKey, years int, organization str
 
 			// activate CA
 			BasicConstraintsValid: true,
-			IsCA: true,
+			IsCA:                  true,
 			// Not allow any non-self-issued intermediate CA
 			MaxPathLen: 0,
 

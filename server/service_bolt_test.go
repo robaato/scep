@@ -15,9 +15,9 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	challengestore "github.com/micromdm/scep/challenge/bolt"
-	boltdepot "github.com/micromdm/scep/depot/bolt"
-	"github.com/micromdm/scep/scep"
+	challengestore "github.com/robaato/scep/challenge/bolt"
+	boltdepot "github.com/robaato/scep/depot/bolt"
+	"github.com/robaato/scep/scep"
 )
 
 func TestDynamicChallenge(t *testing.T) {

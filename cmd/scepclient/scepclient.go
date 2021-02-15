@@ -16,9 +16,9 @@ import (
 
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
-	scepclient "github.com/micromdm/scep/client"
-	"github.com/micromdm/scep/scep"
 	"github.com/pkg/errors"
+	scepclient "github.com/robaato/scep/client"
+	"github.com/robaato/scep/scep"
 )
 
 // version info
