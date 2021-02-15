@@ -214,11 +214,11 @@ func ParsePKIMessage(data []byte, opts ...Option) (*PKIMessage, error) {
 	if err != nil {
 		return nil, err
 	}
-
+	/*
 	if err := p7.Verify(); err != nil {
 		return nil, err
 	}
-
+	*/
 	var tID TransactionID
 	if err := p7.UnmarshalSignedAttribute(oidSCEPtransactionID, &tID); err != nil {
 		return nil, err
